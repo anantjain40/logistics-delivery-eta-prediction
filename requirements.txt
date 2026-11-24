@@ -1,0 +1,9 @@
+# Project 09 — supports the existing Python 3.13 environment.
+# Use final_qa_report.json for actual versions used to reproduce local results.
+pandas>=2.2,<5
+numpy>=2.0,<3
+scikit-learn>=1.6,<2
+lightgbm>=4.5,<5
+matplotlib>=3.9,<4
+ipykernel>=6.29,<8
+joblib>=1.4,<2

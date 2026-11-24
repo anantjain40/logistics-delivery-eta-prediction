@@ -1,0 +1,243 @@
+{
+  "project": "Logistics Delivery ETA Prediction — Project 09",
+  "checks": [
+    {
+      "check": "Artifact present: Dataset",
+      "status": "PASS",
+      "detail": "data\\deliveries.csv"
+    },
+    {
+      "check": "Artifact present: Notebook",
+      "status": "PASS",
+      "detail": "notebooks\\delivery_eta_regression.ipynb"
+    },
+    {
+      "check": "Artifact present: Saved pipeline",
+      "status": "PASS",
+      "detail": "models\\eta_regression_pipeline.joblib"
+    },
+    {
+      "check": "Artifact present: Shipment predictions",
+      "status": "PASS",
+      "detail": "output\\predictions\\shipment_eta_predictions.csv"
+    },
+    {
+      "check": "Artifact present: Model metrics",
+      "status": "PASS",
+      "detail": "output\\model_metrics.json"
+    },
+    {
+      "check": "Artifact present: Model comparison",
+      "status": "PASS",
+      "detail": "output\\model_comparison.csv"
+    },
+    {
+      "check": "Artifact present: BRD",
+      "status": "PASS",
+      "detail": "docs\\business_requirements.md"
+    },
+    {
+      "check": "Artifact present: Executive decision report",
+      "status": "PASS",
+      "detail": "docs\\executive_decision_report.md"
+    },
+    {
+      "check": "Artifact present: Interview preparation",
+      "status": "PASS",
+      "detail": "docs\\interview_preparation.md"
+    },
+    {
+      "check": "Artifact present: Final README",
+      "status": "PASS",
+      "detail": "README.md"
+    },
+    {
+      "check": "One dataset: 10,000 rows and 16 columns",
+      "status": "PASS",
+      "detail": "(10000, 16)"
+    },
+    {
+      "check": "10,000 unique shipment IDs",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Source contains no missing values",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Valid positive target and promise",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Source features available",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Chronological split 6,000 / 1,998 / 2,000",
+      "status": "PASS",
+      "detail": "6,000 / 1,998 / 2,000"
+    },
+    {
+      "check": "Training/validation outcomes completed before test period",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Test cutoff",
+      "status": "PASS",
+      "detail": "2026-08-17 12:46:00"
+    },
+    {
+      "check": "Notebook contains substantial analysis code",
+      "status": "PASS",
+      "detail": "17 code cells"
+    },
+    {
+      "check": "Notebook includes all core analysis stages",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Notebook execution output saved",
+      "status": "PASS",
+      "detail": "16 executed cells recorded; Save All in VS Code if low"
+    },
+    {
+      "check": "Predictive columns exclude IDs, promises and target",
+      "status": "PASS",
+      "detail": "12 raw model features"
+    },
+    {
+      "check": "Selected model is LightGBM",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Exactly 2,000 saved predictions",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Prediction IDs unique",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Prediction IDs and order match chronological holdout",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Reloaded model reproduces saved shipment predictions",
+      "status": "PASS",
+      "detail": "maximum difference 0.0000000 min"
+    },
+    {
+      "check": "Stored historical actual durations match dataset",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Promises match original holdout records",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Stored residuals follow Actual - Predicted",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Predicted buffer follows Promise - Predicted",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Saved test metrics agree with independent recalculation",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Final test metrics match verified project results",
+      "status": "PASS",
+      "detail": "MAE 11.59 | RMSE 15.56 | R2 0.8889 | MAPE 13.39%"
+    },
+    {
+      "check": "Observed lateness and strict risk flags independently verified",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "TP/FP/FN/TN counts verified",
+      "status": "PASS",
+      "detail": "TP 117 | FP 62 | FN 241 | TN 1580"
+    },
+    {
+      "check": "Risk categories verified",
+      "status": "PASS",
+      "detail": "{'Lower concern': 1194, 'Monitor closely': 627, 'Potentially late': 179}"
+    },
+    {
+      "check": "Expanded review correctly covers 293 late shipments",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Five validation models recorded",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "LightGBM was chosen using validation MAE",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Six required evidence figures saved",
+      "status": "PASS",
+      "detail": "All six found"
+    },
+    {
+      "check": "Report discloses synthetic data, risks and exposure",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "README updated with actual model results",
+      "status": "PASS",
+      "detail": ""
+    }
+  ],
+  "passed": 42,
+  "failed": 0,
+  "summary": {
+    "model": "LightGBM",
+    "test_shipments": 2000,
+    "metrics": {
+      "MAE_min": 11.595,
+      "MSE_min2": 242.0089,
+      "RMSE_min": 15.5566,
+      "R2": 0.88886,
+      "MAPE_pct": 13.391,
+      "mean_signed_error_min": 0.2923
+    },
+    "flags": {
+      "TP": 117,
+      "FP": 62,
+      "FN": 241,
+      "TN": 1580
+    },
+    "python": "3.13.16",
+    "packages": {
+      "pandas": "3.1.1",
+      "numpy": "2.5.5",
+      "scikit-learn": "1.9.1",
+      "lightgbm": "4.7.0",
+      "joblib": "1.6.0"
+    }
+  }
+}

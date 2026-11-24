@@ -1,0 +1,16 @@
+{
+    "selected_model": "LightGBM",
+    "dataset_type": "synthetic",
+    "final_training_shipments": 7998,
+    "test_shipments": 2000,
+    "test_start": "2026-08-17 12:46:00",
+    "validation_mae_before_refit": 11.382051076256277,
+    "final_test": {
+        "mae_min": 11.594964884932226,
+        "mse_min2": 242.00891193128817,
+        "rmse_min": 15.556635623787303,
+        "r2": 0.8888598899941973,
+        "mape_pct": 13.391039888273127,
+        "mean_signed_error_min": 0.2922972270162315
+    }
+}

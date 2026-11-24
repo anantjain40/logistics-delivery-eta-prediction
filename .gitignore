@@ -1,0 +1,28 @@
+# Python virtual environments and compiled artifacts
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+
+# Notebook and editor temporary files
+.ipynb_checkpoints/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Secret files
+.env
+.env.*
+!.env.example
+*.pem
+
+# Operating-system and temporary output files
+*.tmp
+*.temp
+~$*
+
+# Keep project data, explanatory plots, predictions, reports and final model in Git.
+# Never commit API keys or private real shipment data.

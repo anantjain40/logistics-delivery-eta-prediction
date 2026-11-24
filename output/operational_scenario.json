@@ -1,0 +1,29 @@
+{
+    "dataset_type": "synthetic",
+    "test_shipments": 2000,
+    "actual_late_shipments": 358,
+    "service_credit_assumption_inr": 150,
+    "review_cost_assumption_inr": 20,
+    "conditional_total_credit_exposure_inr": 53700,
+    "policies": [
+        {
+            "Policy": "Strict alert only",
+            "Reviewed": 179,
+            "Actual_late_in_review": 117,
+            "On_time_in_review": 62,
+            "Review_load_pct": 8.95,
+            "Precision_pct": 65.36312849162012,
+            "Recall_pct": 32.68156424581006
+        },
+        {
+            "Policy": "Alert + monitor",
+            "Reviewed": 806,
+            "Actual_late_in_review": 293,
+            "On_time_in_review": 513,
+            "Review_load_pct": 40.3,
+            "Precision_pct": 36.35235732009926,
+            "Recall_pct": 81.84357541899442
+        }
+    ],
+    "note": "Hypothetical scenario only. Historical late outcomes do not establish financial liability or intervention benefit."
+}
